@@ -33,7 +33,7 @@ class Window(QWidget):
         x0 = random.randint(0, self.width)
         y0 = random.randint(0, self.height)
 
-        self.paint.setBrush(QColor(255, 255, 0))
+        self.paint.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         d = random.randint(20, min(self.width, self.height) // 2)
         self.paint.drawEllipse(x0, y0, d, d)
 
